@@ -11,7 +11,7 @@ It's my vim settings for rails develop on Linux or Mac
 
 ## Install
 
-This step will overwrite your .vimrc .gvimrc file and .vim folder, be sure **backup your vim config** first !!!
+This step will overwrite your .vimrc .gvimrc file and .vim folder, be sure **backup your vim settings** first !!!
 
     git clone git://github.com/huobazi/vimrc.git
     cd vimrc
