@@ -13,7 +13,7 @@ It's my vim settings for rails develop on Linux or Mac
 
 This step will overwrite your .vimrc .gvimrc file and .vim folder, be sure **backup your vim config** first !!!
 
-    git clone https://github.com/huobazi/vimrc.git
+    git clone git://github.com/huobazi/vimrc.git
     cd vimrc
     rake deploy
 
