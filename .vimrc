@@ -11,8 +11,7 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
-" My Bundles here:
-
+"Bundles:
 Bundle 'Align'
 Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/nerdtree'
@@ -47,7 +46,7 @@ set autoindent
 set history=100             " history文件中需要记录的行数
 set nocompatible            " 关闭 vi 兼容模式
 syntax on                   " 自动语法高亮
-colorscheme desert          " 设定配色方案
+colorscheme molokai         " 设定配色方案
 set number                  " 显示行号
 set cursorline              " 突出显示当前行
 set ruler                   " 打开状态栏标尺
@@ -66,25 +65,22 @@ set hlsearch                " 搜索时高亮显示被找到的文本
 set noerrorbells            " 关闭错误信息响铃
 set novisualbell            " 关闭使用可视响铃代替呼叫
 set t_vb=                   " 置空错误铃声的终端代码
-" set showmatch               " 插入括号时，短暂地跳转到匹配的对应括号
-" set matchtime=2             " 短暂跳转到匹配括号的时间
+" set showmatch             " 插入括号时，短暂地跳转到匹配的对应括号
+" set matchtime=2           " 短暂跳转到匹配括号的时间
 set magic                   " 设置魔术
 set hidden                  " 允许在有未保存的修改时切换缓冲区，此时的修改由 vim 负责保存
 set guioptions-=T           " 隐藏工具栏
 set guioptions-=m           " 隐藏菜单栏
 set smartindent             " 开启新行时使用智能自动缩进
-set backspace=indent,eol,start  " 不设定在插入状态无法用退格键和 Delete 键删除回车符
-                            
+set backspace=indent,eol,start  " 不设定在插入状态无法用退格键和 Delete 键删除回车符      
 set cmdheight=1             " 设定命令行的行数为 1
-set laststatus=2            " 显示状态栏 (默认值为 1, 无法显示状态栏)
-set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\ 
-                            " 设置在状态行显示的信息
 set foldenable              " 开始折叠
 set foldmethod=syntax       " 设置语法折叠
 set foldcolumn=0            " 设置折叠区域的宽度
 setlocal foldlevel=1        " 设置折叠层数为
-
-
+set laststatus=2            " 显示状态栏 (默认值为 1, 无法显示状态栏)
+" 设置在状态行显示的信息
+set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\ 
 
 autocmd FileType make     set noexpandtab
 autocmd FileType python   set noexpandtab
@@ -97,15 +93,15 @@ au! BufRead,BufNewFile *.json setfiletype json
 
 
 " 窗口切换快捷键
-nmap <Up> <c-w>k
-nmap <Down> <c-w>j
-nmap <Right> <c-w>l
-nmap <Left> <c-w>h
+nmap <Up> <C-w>k
+nmap <Down> <C-w>j
+nmap <Right> <C-w>l
+nmap <Left> <C-w>h
 
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 
 
 let g:rubycomplete_buffer_loading = 1
