@@ -30,6 +30,11 @@ set shiftwidth=4
 set expandtab
 set smarttab
 
+"编码   
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1,euc-jp,utf-16le,ucs,latin1,euc-kr
+set fenc=utf-8 enc=utf-8 tenc=utf-8
+scriptencoding utf-8
 
 " 带有如下符号的单词不要被换行分割
 set iskeyword+=_,$,@,%,#,-
@@ -39,10 +44,9 @@ setlocal noswapfile         " 不要生成swap文件
 set showmatch               "在输入括号时光标会短暂地跳到与之相匹配的括号处，不影响输入
 set matchtime=5             " 匹配括号高亮的时间（单位是十分之一秒）
 set formatoptions+=mM       "正确地处理中文字符的折行和拼接
-set fileencodings=utf-8     "文件 UTF-8 编码
 filetype plugin indent on   "根据文件格式载入插件和缩进
 set autoindent
-
+set undolevels=100
 set history=100             " history文件中需要记录的行数
 set nocompatible            " 关闭 vi 兼容模式
 syntax on                   " 自动语法高亮
@@ -91,6 +95,11 @@ autocmd FileType javascript set tabstop=2 shiftwidth=2
 autocmd FileType coffee set tabstop=2 shiftwidth=2
 au! BufRead,BufNewFile *.json setfiletype json 
 
+" 缩进
+nmap <tab> v>
+nmap <s-tab> v<
+vmap <tab> >gv
+vmap <s-tab> <gv
 
 " 窗口切换快捷键
 nmap <Up> <C-w>k
@@ -122,3 +131,6 @@ vmap <C-x> d          "剪切
 imap <C-v> <esc>pa    "粘贴
 imap <C-z> <esc>ui    "撤销
 
+"加新行
+nmap <S-CR> o<esc>
+nmap <CR> o<esc>
