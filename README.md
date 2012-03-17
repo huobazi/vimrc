@@ -9,6 +9,8 @@ It's my vim settings for rails develop on Linux or Mac
 * ruby && rake
 * rvm
 
+***
+
 ## Install
 
 This step will overwrite your .vimrc .gvimrc file and .vim folder, be sure **backup your vim settings** first !!!

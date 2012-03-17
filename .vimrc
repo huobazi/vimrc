@@ -129,8 +129,15 @@ map  <C-a> ggVG		  "全选
 vmap <C-c> y	      "复制
 vmap <C-x> d          "剪切
 imap <C-v> <esc>pa    "粘贴
-imap <C-z> <esc>ui    "撤销
 
 "加新行
 nmap <S-CR> o<esc>
 nmap <CR> o<esc>
+
+" 撤销
+noremap <C-Z> u
+inoremap <C-Z> <C-O>u
+
+" 重做
+noremap <C-Y> <C-R>
+inoremap <C-Y> <C-O><C-R>
