@@ -3,6 +3,7 @@ task :deploy do
 	
   # Bundle and scripts
 
+  system 'rm -rf ~/.vim'
   system 'git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle'
   system 'mkdir ~/.vim/colors'
   system 'curl -o ~/.vim/colors/molokai.vim https://raw.github.com/tomasr/molokai/master/colors/molokai.vim'
