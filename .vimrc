@@ -102,16 +102,21 @@ vmap <tab> >gv
 vmap <s-tab> <gv
 
 " 窗口切换快捷键
-nmap <Up> <C-w>k
-nmap <Down> <C-w>j
-nmap <Right> <C-w>l
-nmap <Left> <C-w>h
 
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
+" 停用上下左右的箭头
+map <UP> <NOP>
+map <DOWN> <NOP>
+map <LEFT> <NOP>
+map <RIGHT> <NOP>
+inoremap <UP> <NOP>
+inoremap <DOWN> <NOP>
+inoremap <LEFT> <NOP>
+inoremap <RIGHT> <NOP>
 
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
