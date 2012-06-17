@@ -68,7 +68,8 @@ autocmd FileType make     	set noexpandtab
 autocmd FileType python   	set noexpandtab
 autocmd FileType eruby  	set tabstop=2 shiftwidth=2
 autocmd FileType ruby,rdoc 	set tabstop=2 shiftwidth=2
-autocmd FileType html set tabstop=2 shiftwidth=2
+autocmd FileType html 		set tabstop=2 shiftwidth=2
 autocmd FileType javascript set tabstop=2 shiftwidth=2
-autocmd FileType coffee set tabstop=2 shiftwidth=2
+autocmd FileType coffee 	set tabstop=2 shiftwidth=2
+
 au! BufRead,BufNewFile *.json setfiletype json 
