@@ -1,6 +1,6 @@
 # My vim settings
 
-It's my vim settings for rails develop on Linux or Mac
+It's my vim settings for rails develop on Linux
 
 ## Dependence
 

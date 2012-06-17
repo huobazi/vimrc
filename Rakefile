@@ -10,7 +10,8 @@ task :deploy do
   system 'curl -o ~/.vim/colors/rails_envy.vim https://raw.github.com/squil/vim_colors/master/colors/RailsEnvy.vim'
   system 'curl -o ~/.vim/colors/rails_casts.vim https://raw.github.com/squil/vim_colors/master/colors/Railscasts.vim'
   
-  system 'cp .vimrc ~/'
+  system 'cp -rf conf ~/.vim/conf'
+  system 'cp -rf vimrc ~/.vimrc'
   system 'vim +BundleInstall +qa'
   system 'cd ~/.vim/bundle/Command-T/ruby/command-t/; rvm system do ruby extconf.rb; make; cd -'
 

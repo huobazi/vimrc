@@ -1,26 +1,6 @@
-" git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-" BundleInstall
-
-set nocompatible               " be iMproved
-filetype off                   " required!
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
-
-"Bundles:
-Bundle 'Align'
-Bundle 'tpope/vim-rails'
-Bundle 'scrooloose/nerdtree'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'hallison/vim-markdown'
-Bundle 'hallettj/jslint.vim'
-
-Bundle 'wincent/Command-T'
-" cd ~/.vim/bundle/Command-T/ruby/ ; ruby extconf.rb ; make 
+syntax on                   " 自动语法高亮
+colorscheme rails_envy      " 设定配色方案
+filetype plugin indent on   "根据文件格式载入插件和缩进
 
 " 字体
 set guifont=monaco\ 9
@@ -44,13 +24,10 @@ setlocal noswapfile         " 不要生成swap文件
 set showmatch               "在输入括号时光标会短暂地跳到与之相匹配的括号处，不影响输入
 set matchtime=5             " 匹配括号高亮的时间（单位是十分之一秒）
 set formatoptions+=mM       "正确地处理中文字符的折行和拼接
-filetype plugin indent on   "根据文件格式载入插件和缩进
 set autoindent
 set undolevels=100
 set history=100             " history文件中需要记录的行数
 set nocompatible            " 关闭 vi 兼容模式
-syntax on                   " 自动语法高亮
-colorscheme rails_envy      " 设定配色方案
 set number                  " 显示行号
 set cursorline              " 突出显示当前行
 set ruler                   " 打开状态栏标尺
@@ -62,7 +39,7 @@ set nowritebackup
 set autochdir               " 自动切换当前目录为当前文件所在的目录
 filetype plugin indent on   " 开启插件
 set backupcopy=yes          " 设置备份时的行为为覆盖
-set ignorecase smartcase    " 搜索时忽略大小写，但在有一个或以上大写字母时仍保持对大小写敏感
+set ignorecase smartcase    " 索时忽略大小写，但在有一个或以上大写字母时仍保持对大小写敏感
 set nowrapscan              " 禁止在搜索到文件两端时重新搜索
 set incsearch               " 输入搜索内容时就显示搜索结果
 set hlsearch                " 搜索时高亮显示被找到的文本
@@ -83,66 +60,15 @@ set foldmethod=syntax       " 设置语法折叠
 set foldcolumn=0            " 设置折叠区域的宽度
 setlocal foldlevel=1        " 设置折叠层数为
 set laststatus=2            " 显示状态栏 (默认值为 1, 无法显示状态栏)
+
 " 设置在状态行显示的信息
 set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\ 
 
-autocmd FileType make     set noexpandtab
-autocmd FileType python   set noexpandtab
-autocmd FileType eruby  set tabstop=2 shiftwidth=2
-autocmd FileType ruby,rdoc set tabstop=2 shiftwidth=2
+autocmd FileType make     	set noexpandtab
+autocmd FileType python   	set noexpandtab
+autocmd FileType eruby  	set tabstop=2 shiftwidth=2
+autocmd FileType ruby,rdoc 	set tabstop=2 shiftwidth=2
 autocmd FileType html set tabstop=2 shiftwidth=2
 autocmd FileType javascript set tabstop=2 shiftwidth=2
 autocmd FileType coffee set tabstop=2 shiftwidth=2
 au! BufRead,BufNewFile *.json setfiletype json 
-
-" 缩进
-nmap <tab> v>
-nmap <s-tab> v<
-vmap <tab> >gv
-vmap <s-tab> <gv
-
-" 窗口切换快捷键
-
-nmap <C-h> <C-w>h
-nmap <C-j> <C-w>j
-nmap <C-k> <C-w>k
-nmap <C-l> <C-w>l
-
-" 停用上下左右的箭头
-map <UP> <NOP>
-map <DOWN> <NOP>
-map <LEFT> <NOP>
-map <RIGHT> <NOP>
-inoremap <UP> <NOP>
-inoremap <DOWN> <NOP>
-inoremap <LEFT> <NOP>
-inoremap <RIGHT> <NOP>
-
-let g:rubycomplete_buffer_loading = 1
-let g:rubycomplete_classes_in_global = 1
-let g:rubycomplete_rails = 1
-
-nmap <S-f> :CommandT<cr>
-let g:fuf_previewHeight = 0
-
-" NERDTree插件的快捷键
-imap <silent> <F6> <esc>:NERDTreeToggle<CR>
-nmap <silent> <F6> :NERDTreeToggle<CR>
-
-" 类似windows 下的快捷键
-map  <C-a> ggVG		  "全选
-vmap <C-c> y	      "复制
-vmap <C-x> d          "剪切
-imap <C-v> <esc>pa    "粘贴
-
-"加新行
-nmap <S-CR> o<esc>
-nmap <CR> o<esc>
-
-" 撤销
-noremap <C-Z> u
-inoremap <C-Z> <C-O>u
-
-" 重做
-noremap <C-Y> <C-R>
-inoremap <C-Y> <C-O><C-R>
