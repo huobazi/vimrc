@@ -1,11 +1,5 @@
 
-""""""""""""""""""""""""""""""""""""""""
-"
-" quick escape
-"
-""""""""""""""""""""""""""""""""""""""""
-" set quick escape from insert mode, and now I can go without arrow keys and
-" use j and k to move around in insert mode
+" Esc
 imap JJ <esc>
 imap jj <esc>
 
