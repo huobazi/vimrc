@@ -1,16 +1,20 @@
 syntax on                   " 自动语法高亮
 colorscheme rails_envy      " 设定配色方案
-filetype plugin indent on   "根据文件格式载入插件和缩进
+filetype plugin indent on   " 根据文件格式载入插件和缩进
+
+" 字典
+set dictionary+=~/.vim/dict/my_words
+set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words
 
 " 字体
 set guifont=monaco\ 9
-set mouse=a          "打开鼠标功能
-set tabstop=4        "指标符宽度
+set mouse=a          " 打开鼠标功能
+set tabstop=4        " 指标符宽度
 set shiftwidth=4
 set expandtab
 set smarttab
 
-"编码   
+" 编码   
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1,euc-jp,utf-16le,ucs,latin1,euc-kr
 set fenc=utf-8 enc=utf-8 tenc=utf-8
@@ -19,11 +23,11 @@ scriptencoding utf-8
 " 带有如下符号的单词不要被换行分割
 set iskeyword+=_,$,@,%,#,-
 
-set wildmenu                "打开命令行补全菜单
+set wildmenu                " 打开命令行补全菜单
 setlocal noswapfile         " 不要生成swap文件
-set showmatch               "在输入括号时光标会短暂地跳到与之相匹配的括号处，不影响输入
+set showmatch               " 在输入括号时光标会短暂地跳到与之相匹配的括号处，不影响输入
 set matchtime=5             " 匹配括号高亮的时间（单位是十分之一秒）
-set formatoptions+=mM       "正确地处理中文字符的折行和拼接
+set formatoptions+=mM       " 正确地处理中文字符的折行和拼接
 set autoindent
 set undolevels=100
 set history=100             " history文件中需要记录的行数

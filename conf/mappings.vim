@@ -1,3 +1,14 @@
+
+""""""""""""""""""""""""""""""""""""""""
+"
+" quick escape
+"
+""""""""""""""""""""""""""""""""""""""""
+" set quick escape from insert mode, and now I can go without arrow keys and
+" use j and k to move around in insert mode
+imap JJ <esc>
+imap jj <esc>
+
 " 缩进
 nmap <tab> v>
 nmap <s-tab> v<
@@ -5,7 +16,6 @@ vmap <tab> >gv
 vmap <s-tab> <gv
 
 " 窗口切换快捷键
-
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
@@ -33,10 +43,10 @@ imap <silent> <F6> <esc>:NERDTreeToggle<CR>
 nmap <silent> <F6> :NERDTreeToggle<CR>
 
 " 类似windows 下的快捷键
-map  <C-a> ggVG		  "全选
-vmap <C-c> y	      "复制
-vmap <C-x> d          "剪切
-imap <C-v> <esc>pa    "粘贴
+map  <C-a> ggVG		  " 全选
+vmap <C-c> y	      " 复制
+vmap <C-x> d          " 剪切
+imap <C-v> <esc>pa    " 粘贴
 
 "加新行
 nmap <S-CR> o<esc>
