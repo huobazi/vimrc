@@ -37,19 +37,28 @@ imap <silent> <F6> <esc>:NERDTreeToggle<CR>
 nmap <silent> <F6> :NERDTreeToggle<CR>
 
 " 类似windows 下的快捷键
-map  <C-a> ggVG		  " 全选
-vmap <C-c> y	      " 复制
-vmap <C-x> d          " 剪切
-imap <C-v> <esc>pa    " 粘贴
+map  <C-a> ggVG		    " 全选
+vmap <C-c> "+y	        " 复制
+vmap <C-x> "+x          " 剪切
+vmap <C-v> "+gP         " 粘贴
+imap <C-v> <esc>"+gPi   " 粘贴
 
 "加新行
 nmap <S-CR> o<esc>
 nmap <CR> o<esc>
 
 " 撤销
-noremap <C-Z> u
-inoremap <C-Z> <C-O>u
+noremap <C-z> u
+inoremap <C-z> <C-O>u
 
 " 重做
-noremap <C-Y> <C-R>
-inoremap <C-Y> <C-O><C-R>
+noremap <C-y> <C-R>
+inoremap <C-y> <C-O><C-R>
+
+" 保存
+nmap <C-s> :w<cr>
+vmap <C-s> <esc>:w<cr>i
+imap <C-s> <esc>:w<cr>i
+
+" 向下翻页
+nmap <Space> <PageDown>
