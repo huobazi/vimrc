@@ -43,8 +43,3 @@ let g:fuf_coveragefile_prompt = '=>'
 " NERDTree插件的快捷键
 imap <silent> <F6> <esc>:NERDTreeToggle<CR>
 nmap <silent> <F6> :NERDTreeToggle<CR>
-
-" Ctrl + S 保存文件
-map <C-s> <esc>:w<CR> 
-imap <C-s> <esc>:w<CR>a
-vmap <C-s> p<esc>:w<CR>
