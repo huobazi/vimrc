@@ -1,6 +1,3 @@
-" git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-" BundleInstall
-
 set nocompatible               " be iMproved
 filetype off                   " required!
 
@@ -11,13 +8,17 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
-"Bundles:
+" My Bundles here:
 Bundle 'Align'
 Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'hallison/vim-markdown'
 Bundle 'hallettj/jslint.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
 
-Bundle 'wincent/Command-T'
-" cd ~/.vim/bundle/Command-T/ruby/ ; ruby extconf.rb ; make 
+
+filetype plugin indent on     " required!

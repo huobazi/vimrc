@@ -33,9 +33,18 @@ let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
 let g:rubycomplete_rails = 1
 
-nmap <S-f> :CommandT<cr>
+" FuzzyFinder
+map <S-p>  :FufCoverageFile!<cr>
 let g:fuf_previewHeight = 0
+let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|(tmp|log|db/migrate|vendor)'
+let g:fuf_enumeratingLimit = 5000
+let g:fuf_coveragefile_prompt = '=>'
 
 " NERDTree插件的快捷键
 imap <silent> <F6> <esc>:NERDTreeToggle<CR>
 nmap <silent> <F6> :NERDTreeToggle<CR>
+
+" Ctrl + S 保存文件
+map <C-s> <esc>:w<CR> 
+imap <C-s> <esc>:w<CR>a
+vmap <C-s> p<esc>:w<CR>

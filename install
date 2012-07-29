@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+echo ""
+echo "Deploy vimrc settings......"
+for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do
+if [[ ( -e $i ) || ( -h $i ) ]]; then
+echo "${i} has been renamed to ${i}.old"
+    cp "${i}" "${i}.old" -rf || die "Could not move ${i} to ${i}.old"
+  fi
+done
+  
+# Bundle and scripts
+
+rm -rf $HOME/.vim
+git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle \
+  || die "Could not clone the vundle repository to ${HOME}/.vim/bundle/vundle"
+mkdir $HOME/.vim/colors
+curl -o $HOME/.vim/colors/molokai.vim https://raw.github.com/tomasr/molokai/master/colors/molokai.vim
+curl -o $HOME/.vim/colors/rails_envy.vim https://raw.github.com/squil/vim_colors/master/colors/RailsEnvy.vim
+curl -o $HOME/.vim/colors/rails_casts.vim https://raw.github.com/squil/vim_colors/master/colors/Railscasts.vim
+cp -rf conf $HOME/.vim/conf
+cp -rf vimrc $HOME/.vimrc
+vim +BundleInstall +qall
+
+
+echo "Deploy done."

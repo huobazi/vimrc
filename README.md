@@ -1,13 +1,11 @@
 # My vim settings
 
-It's my vim settings for rails develop on Linux
+It's my vim settings on Linux
 
 ## Dependence
 
 * vim
 * git
-* ruby && rake
-* rvm
 
 ***
 
@@ -16,7 +14,7 @@ It's my vim settings for rails develop on Linux
 This step will overwrite your .vimrc .gvimrc file and .vim folder, be sure **backup your vim settings** first !!!
 
     git clone git://github.com/huobazi/vimrc.git
-    cd vimrc
-    rake deploy
+    cd vimrc 
+    chmod +x ./install && ./install
 
 Done.
