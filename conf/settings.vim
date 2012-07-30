@@ -1,5 +1,5 @@
 syntax on                   " 自动语法高亮
-colorscheme rails_envy      " 设定配色方案
+colorscheme tango      " 设定配色方案
 filetype plugin indent on   " 根据文件格式载入插件和缩进
 
 " 字典
