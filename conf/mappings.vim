@@ -19,6 +19,12 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
+" 插入模式移动
+imap <A-h> <Left>
+imap <A-j> <Down>
+imap <A-k> <Up>
+imap <A-l> <Right>
+
 " 停用上下左右的箭头
 map <UP> <NOP>
 map <DOWN> <NOP>
