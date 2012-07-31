@@ -7,6 +7,10 @@ else
   set background=dark
 endif
 
+if $COLORTERM == 'gnome-terminal'
+  set t_Co=256
+endif
+
 try 
   colorscheme solarized 
 catch  
