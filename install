@@ -3,8 +3,9 @@ echo ""
 echo "Deploy vimrc settings......"
 for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do
 if [[ ( -e $i ) || ( -h $i ) ]]; then
-echo "${i} has been renamed to ${i}.old"
-    cp "${i}" "${i}.old" -rf || die "Could not move ${i} to ${i}.old"
+    today=`date +%Y%m%d%H%M%S`
+    echo "${i} has been renamed to ${i}.${today}.old"
+    cp "${i}" "${i}.${today}.old" -rf || die "Could not move ${i} to ${i}.${today}.old"
   fi
 done
   
