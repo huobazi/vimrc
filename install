@@ -13,8 +13,6 @@ done
 rm -rf $HOME/.vim
 git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle \
   || die "Could not clone the vundle repository to ${HOME}/.vim/bundle/vundle"
-mkdir $HOME/.vim/colors
-curl -o $HOME/.vim/colors/tango.vim https://raw.github.com/vim-scripts/tango.vim/master/colors/tango.vim
 cp -rf conf $HOME/.vim/conf
 cp -rf vimrc $HOME/.vimrc
 vim +BundleInstall +qall

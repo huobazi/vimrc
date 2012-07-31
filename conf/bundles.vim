@@ -9,6 +9,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'Align'
 Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/nerdtree'
