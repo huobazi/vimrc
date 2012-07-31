@@ -8,7 +8,7 @@ else
 endif
 
 try 
-    colorscheme solarized 
+  colorscheme solarized 
 catch  
 endtry
 
