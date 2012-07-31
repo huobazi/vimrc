@@ -11,7 +11,8 @@ if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
 
-try 
+try
+  let g:solarized_termcolors=256
   colorscheme solarized 
 catch  
 endtry
