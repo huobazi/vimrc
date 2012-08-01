@@ -9,17 +9,17 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'Align'
-Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'hallison/vim-markdown'
-Bundle 'hallettj/jslint.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
+Bundle 'Align'
+Bundle 'msanders/snipmate.vim'
+Bundle 'tpope/vim-rails'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'hallison/vim-markdown'
+Bundle 'altercation/vim-colors-solarized'
 
 
 filetype plugin indent on     " required!
