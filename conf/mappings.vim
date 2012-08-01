@@ -19,12 +19,6 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
-" 插入模式移动
-imap <A-h> <Left>
-imap <A-j> <Down>
-imap <A-k> <Up>
-imap <A-l> <Right>
-
 " 停用上下左右的箭头
 map <UP> <NOP>
 map <DOWN> <NOP>
@@ -38,8 +32,7 @@ inoremap <RIGHT> <NOP>
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
 let g:rubycomplete_rails = 1
-
-" FuzzyFinder
+" FuzzyFinder 
 map <S-p>  :FufCoverageFile!<cr>
 let g:fuf_previewHeight = 0
 let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|(tmp|log|db/migrate|vendor)'
