@@ -19,6 +19,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'hallison/vim-markdown'
+Bundle 'Townk/vim-autoclose'
 Bundle 'altercation/vim-colors-solarized'
 
 
