@@ -21,6 +21,8 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'hallison/vim-markdown'
 Bundle 'Townk/vim-autoclose'
+Bundle 'vim-scripts/OmniCppComplete'
+Bundle 'majutsushi/tagbar'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'sjl/badwolf'
 

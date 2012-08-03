@@ -65,3 +65,6 @@ noremap <Leader>w :w!<CR>:echo "Saved to: " expand('%:p')<CR>
 
 " sudo 快速保存 
 cmap w!! w !sudo tee % >/dev/null
+
+ "Tagbar 快捷键
+nmap <F8> :TagbarToggle<CR>
