@@ -21,6 +21,6 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'hallison/vim-markdown'
 Bundle 'Townk/vim-autoclose'
 Bundle 'altercation/vim-colors-solarized'
-
+Bundle 'sjl/badwolf'
 
 filetype plugin indent on     " required!
