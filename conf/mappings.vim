@@ -19,10 +19,10 @@ nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
 " 插入模式下的移动
-inoremap <A-h> <Left>
-inoremap <A-j> <Down>
-inoremap <A-k> <Up>
-inoremap <A-l> <Right>
+"inoremap <A-h> <Left>
+"inoremap <A-j> <Down>
+"inoremap <A-k> <Up>
+"inoremap <A-l> <Right>
 
 " 停用上下左右的箭头
 map <UP> <NOP>
@@ -33,12 +33,6 @@ inoremap <UP> <NOP>
 inoremap <DOWN> <NOP>
 inoremap <LEFT> <NOP>
 inoremap <RIGHT> <NOP>
-
-" Ruby自动完成设置
-set ofu=syntaxcomplete#Complete
-let g:rubycomplete_buffer_loading = 1
-let g:rubycomplete_classes_in_global = 1
-let g:rubycomplete_rails = 1
 
 " FuzzyFinder的快捷键和设置 
 map <S-p>  :FufCoverageFile!<cr>

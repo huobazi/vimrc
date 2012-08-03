@@ -76,4 +76,10 @@ autocmd FileType html 		set tabstop=2 shiftwidth=2
 autocmd FileType javascript set tabstop=2 shiftwidth=2
 autocmd FileType coffee 	set tabstop=2 shiftwidth=2
 
+" Ruby自动完成设置
+set ofu=syntaxcomplete#Complete
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_classes_in_global = 1
+let g:rubycomplete_rails = 1
+
 au! BufRead,BufNewFile *.json setfiletype json 
