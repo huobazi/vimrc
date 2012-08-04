@@ -8,14 +8,19 @@ if [[ ( -e $i ) || ( -h $i ) ]]; then
     cp "${i}" "${i}.${today}.old" -rf || die "Could not move ${i} to ${i}.${today}.old"
   fi
 done
-  
-# Bundle and scripts
 
 rm -rf $HOME/.vim
-git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle \
-  || die "Could not clone the vundle repository to ${HOME}/.vim/bundle/vundle"
-cp -rf conf $HOME/.vim/conf
-cp -rf vimrc $HOME/.vimrc
+rm -rf $HOME/.vimrc
+rm -rf $HOME/.gvimrc
+
+current_path="${PWD}"
+
+rm -rf $current_path/bundle
+git clone https://github.com/gmarik/vundle.git $current_path/bundle/vundle 
+
+ln -s $current_path $HOME/.vim
+ln -s $current_path/vimrc $HOME/.vimrc
+
 vim +BundleInstall +qall
 
 
