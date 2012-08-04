@@ -61,7 +61,7 @@ nnoremap Y y$
 nnoremap <Leader>q :q<CR>
 
 " 快速保存
-noremap <Leader>w :w!<CR>:echo "Saved to: " expand('%:p')<CR>
+noremap <Leader>w :w!<CR>:echo "Saving:" expand('%:p')<CR>
 
 " sudo 快速保存 
 cmap w!! w !sudo tee % >/dev/null

@@ -8,22 +8,37 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
-" My Bundles here:
+" Files explorers 
+Bundle 'L9'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
-Bundle 'L9'
 Bundle 'FuzzyFinder'
-Bundle 'Align'
-Bundle 'msanders/snipmate.vim'
+
+" Ruby
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'hallison/vim-markdown'
+
+" Coding 
+Bundle 'Align'
 Bundle 'Townk/vim-autoclose'
 Bundle 'vim-scripts/OmniCppComplete'
-Bundle 'ddadi/vim-autocomplpop'
+Bundle 'vim-scripts/AutoComplPop'
 Bundle 'majutsushi/tagbar'
+Bundle 'scrooloose/nerdcommenter'
+
+" Vim-snipmate https://github.com/garbas/vim-snipmate
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle 'honza/snipmate-snippets'
+Bundle 'garbas/vim-snipmate'
+
+" CoffeeScript
+Bundle 'kchmck/vim-coffee-script'
+
+" Markdown
+Bundle 'hallison/vim-markdown'
+
+" ColorScheme
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'sjl/badwolf'
 
