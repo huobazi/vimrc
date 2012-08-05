@@ -14,6 +14,9 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'FuzzyFinder'
 
+" http://code.google.com/p/conque/
+Bundle 'huobazi/conque'
+
 " Ruby
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
@@ -37,6 +40,9 @@ Bundle 'kchmck/vim-coffee-script'
 
 " Markdown
 Bundle 'hallison/vim-markdown'
+
+" fcitx
+Bundle 'vim-scripts/fcitx.vim'
 
 " ColorScheme
 Bundle 'altercation/vim-colors-solarized'
