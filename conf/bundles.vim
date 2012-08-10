@@ -14,9 +14,6 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'FuzzyFinder'
 
-" http://code.google.com/p/conque/
-Bundle 'huobazi/conque'
-
 " Ruby
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
