@@ -25,12 +25,13 @@ Bundle 'vim-scripts/OmniCppComplete'
 Bundle 'vim-scripts/AutoComplPop'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'drmingdrmer/xptemplate'
 
 " Vim-snipmate https://github.com/garbas/vim-snipmate
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle 'honza/snipmate-snippets'
-Bundle 'garbas/vim-snipmate'
+"Bundle 'MarcWeber/vim-addon-mw-utils'
+"Bundle 'tomtom/tlib_vim'
+"Bundle 'honza/snipmate-snippets'
+"Bundle 'garbas/vim-snipmate'
 
 " CoffeeScript
 Bundle 'kchmck/vim-coffee-script'
