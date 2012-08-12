@@ -83,3 +83,11 @@ let g:rubycomplete_classes_in_global = 1
 let g:rubycomplete_rails = 1
 
 au! BufRead,BufNewFile *.json setfiletype json 
+
+" 80字符边界线
+if exists('+colorcolumn')
+    set colorcolumn=80
+else
+    " Emulate
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+',-1)
+endif

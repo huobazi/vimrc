@@ -5,6 +5,8 @@ let g:mapleader= ","
 " Esc
 imap JJ <esc>
 imap jj <esc>
+imap KK <esc>
+imap kk <esc>
 
 " 缩进
 nmap <tab> v>
