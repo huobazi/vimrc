@@ -40,6 +40,7 @@ set softtabstop=4              " 使得按退格键时可以一次删掉 4 个�
 set tabstop=4                  " 设定 tab 长度为 4
 set nobackup                   " 覆盖文件时不备份
 set nowritebackup
+set noswapfile                 " 不产生交换文件
 set autochdir                  " 自动切换当前目录为当前文件所在的目录
 filetype plugin indent on      " 开启插件
 set backupcopy=yes             " 设置备份时的行为为覆盖
