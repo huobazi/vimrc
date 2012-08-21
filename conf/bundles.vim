@@ -42,6 +42,9 @@ Bundle 'hallison/vim-markdown'
 " fcitx
 Bundle 'vim-scripts/fcitx.vim'
 
+" Powerline
+Bundle 'Lokaltog/vim-powerline'
+
 " ColorScheme
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'sjl/badwolf'

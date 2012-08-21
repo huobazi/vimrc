@@ -66,9 +66,6 @@ set foldcolumn=0               " 设置折叠区域的宽度
 setlocal foldlevel=1           " 设置折叠层数为
 set laststatus=2               " 显示状态栏 (默认值为 1, 无法显示状态栏)
 
-" 设置在状态行显示的信息
-set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\ 
-
 autocmd FileType make     	set noexpandtab
 autocmd FileType python   	set noexpandtab
 autocmd FileType eruby  	set tabstop=2 shiftwidth=2
@@ -92,3 +89,7 @@ else
     " Emulate
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+',-1)
 endif
+
+
+" Powerline
+let g:Powerline_symbols = 'unicode'
