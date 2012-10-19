@@ -21,11 +21,8 @@ Bundle 'tpope/vim-rails'
 " Coding 
 Bundle 'Align'
 Bundle 'Townk/vim-autoclose'
-Bundle 'vim-scripts/OmniCppComplete'
-Bundle 'vim-scripts/AutoComplPop'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdcommenter'
-"Bundle 'drmingdrmer/xptemplate'
 
 " Vim-snipmate https://github.com/garbas/vim-snipmate
 Bundle 'MarcWeber/vim-addon-mw-utils'
