@@ -44,6 +44,5 @@ Bundle 'Lokaltog/vim-powerline'
 
 " ColorScheme
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'sjl/badwolf'
 
 filetype plugin indent on     " required!
