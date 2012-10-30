@@ -43,6 +43,6 @@ Bundle 'vim-scripts/fcitx.vim'
 Bundle 'Lokaltog/vim-powerline'
 
 " ColorScheme
-Bundle 'altercation/vim-colors-solarized'
+"Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on     " required!
