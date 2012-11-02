@@ -9,14 +9,10 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Files explorers 
-Bundle 'L9'
 Bundle 'scrooloose/nerdtree'
+Bundle 'L9'
 Bundle 'kien/ctrlp.vim'
 Bundle 'FuzzyFinder'
-
-" Ruby
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-rails'
 
 " Coding 
 Bundle 'Align'
@@ -24,11 +20,15 @@ Bundle 'Townk/vim-autoclose'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdcommenter'
 
-" Vim-snipmate https://github.com/garbas/vim-snipmate
+" Snipmate
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'honza/snipmate-snippets'
 Bundle 'garbas/vim-snipmate'
+
+" Ruby
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-rails'
 
 " CoffeeScript
 Bundle 'kchmck/vim-coffee-script'
@@ -36,13 +36,13 @@ Bundle 'kchmck/vim-coffee-script'
 " Markdown
 Bundle 'hallison/vim-markdown'
 
-" fcitx
+" Fcitx
 Bundle 'vim-scripts/fcitx.vim'
 
 " Powerline
 Bundle 'Lokaltog/vim-powerline'
 
 " ColorScheme
-"Bundle 'altercation/vim-colors-solarized'
+Bundle 'tomasr/molokai'
 
 filetype plugin indent on     " required!
