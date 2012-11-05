@@ -81,6 +81,11 @@ let g:rubycomplete_classes_in_global = 1
 let g:rubycomplete_rails = 1
 
 au! BufRead,BufNewFile *.json setfiletype json 
+au! BufRead,BufNewFile *.hamlc set ft=haml
+au! BufRead,BufNewFile *.mobile.erb set filetype=html.eruby.javascript.javascript-jquery
+au! BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
+au! BufRead,BufNewFile *.js set ft=javascript syntax=jquery
+au! BufRead,BufNewFile *.html set ft=html.javascript.javascript-jquery
 
 " 80字符边界线
 if exists('+colorcolumn')
