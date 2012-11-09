@@ -82,7 +82,8 @@ let g:rubycomplete_rails = 1
 
 au! BufRead,BufNewFile *.json setfiletype json 
 au! BufRead,BufNewFile *.hamlc set ft=haml
-au! BufRead,BufNewFile *.mobile.erb set filetype=html.eruby.javascript.javascript-jquery
+au! BufNewFile,BufRead *.mobile.erb let b:eruby_subtype='html'
+au! BufRead,BufNewFile *.mobile.erb set filetype=eruby.html.javascript.javascript-jquery
 au! BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 au! BufRead,BufNewFile *.js set ft=javascript syntax=jquery
 au! BufRead,BufNewFile *.html set ft=html.javascript.javascript-jquery
