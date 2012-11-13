@@ -88,14 +88,7 @@ au! BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 au! BufRead,BufNewFile *.js set ft=javascript syntax=jquery
 au! BufRead,BufNewFile *.html set ft=html.javascript.javascript-jquery
 
-" 80字符边界线
-if exists('+colorcolumn')
-    set colorcolumn=80
-else
-    " Emulate
-    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+',-1)
-endif
-
 
 " Powerline
 let g:Powerline_symbols = 'unicode'
+
