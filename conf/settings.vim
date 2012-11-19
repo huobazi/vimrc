@@ -196,4 +196,4 @@ endif
 
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.DS_Store  " MacOSX/Linux
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
