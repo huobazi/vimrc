@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 echo ""
 echo "Deploy vimrc settings......"
-for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do
-if [[ ( -e $i ) || ( -h $i ) ]]; then
-    today=`date +%Y%m%d%H%M%S`
-    echo "${i} has been renamed to ${i}.${today}.old"
-    cp "${i}" "${i}.${today}.old" -rf || die "Could not move ${i} to ${i}.${today}.old"
-  fi
-done
+#for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do
+#if [[ ( -e $i ) || ( -h $i ) ]]; then
+#    today=`date +%Y%m%d%H%M%S`
+#    echo "${i} has been renamed to ${i}.${today}.old"
+#    cp "${i}" "${i}.${today}.old" -rf || die "Could not move ${i} to ${i}.${today}.old"
+#  fi
+#done
 
 rm -rf $HOME/.vim
 rm -rf $HOME/.vimrc
