@@ -200,4 +200,3 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
 " clipboard
 set clipboard=unnamed
-

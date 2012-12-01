@@ -26,6 +26,7 @@ Bundle 'Townk/vim-autoclose'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'closetag.vim'
+Bundle 'vim-scripts/HTML-AutoCloseTag'
 
 " Snipmate
 "Bundle 'MarcWeber/vim-addon-mw-utils'
@@ -36,7 +37,7 @@ Bundle 'honza/snipmate-snippets'
 
 " Ruby
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-rails'
+"Bundle 'tpope/vim-rails'
 
 " CoffeeScript
 Bundle 'kchmck/vim-coffee-script'
