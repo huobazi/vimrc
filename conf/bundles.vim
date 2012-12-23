@@ -14,9 +14,7 @@ Bundle 'othree/html5.vim'
 
 " Files explorers 
 Bundle 'scrooloose/nerdtree'
-Bundle 'L9'
 Bundle 'kien/ctrlp.vim'
-Bundle 'FuzzyFinder'
 
 " Coding 
 Bundle 'Shougo/neocomplcache'
@@ -29,11 +27,7 @@ Bundle 'closetag.vim'
 Bundle 'vim-scripts/HTML-AutoCloseTag'
 
 " Snipmate
-"Bundle 'MarcWeber/vim-addon-mw-utils'
-"Bundle 'tomtom/tlib_vim'
-"Bundle 'garbas/vim-snipmate'
 Bundle 'honza/snipmate-snippets'
-"Bundle 'kaichen/vim-snipmate-ruby-snippets'
 
 " Ruby
 Bundle 'vim-ruby/vim-ruby'

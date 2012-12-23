@@ -36,13 +36,6 @@ inoremap <DOWN> <NOP>
 inoremap <LEFT> <NOP>
 inoremap <RIGHT> <NOP>
 
-" FuzzyFinder的快捷键和设置 
-map <S-p>  :FufCoverageFile!<cr>
-let g:fuf_previewHeight = 0
-let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|(tmp|log|db/migrate|vendor)'
-let g:fuf_enumeratingLimit = 5000
-let g:fuf_coveragefile_prompt = '=>'
-
 " NERDTree的快捷键
 imap <silent> <F6> <esc>:NERDTreeToggle<CR>
 nmap <silent> <F6> :NERDTreeToggle<CR>
