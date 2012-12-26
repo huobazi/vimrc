@@ -25,6 +25,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'closetag.vim'
 Bundle 'vim-scripts/HTML-AutoCloseTag'
+Bundle 'ZenCoding.vim'
 
 " Snipmate
 Bundle 'honza/snipmate-snippets'
@@ -46,7 +47,7 @@ Bundle 'vim-scripts/fcitx.vim'
 Bundle 'Lokaltog/vim-powerline'
 
 " ColorScheme
-Bundle 'tomasr/molokai'
+Bundle 'molokai'
 
 
 filetype plugin indent on     " required!

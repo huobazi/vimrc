@@ -2,17 +2,16 @@ runtime! conf/*.vim
 
 if has("gui_running")
     set guioptions-=T " 不显示工具条
-    set background=light
+    "set background=light
 else
     set t_Co=256
-    set background=dark
+    "set background=dark
 endif
 
 " 配色
 try
-    let g:molokai_original = 1
     colorscheme molokai 
-
+    let g:molokai_original = 1
 catch  
 endtry
 
@@ -24,5 +23,4 @@ else
     " Emulate
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+',-1)
 endif
-
 

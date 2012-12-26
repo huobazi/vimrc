@@ -195,5 +195,21 @@ endif
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.DS_Store  " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
-" clipboard
+"Zencoding 设置
+let g:user_zen_expandabbr_key='<S-O>'
+let g:use_zen_complete_tag = 1
+
+" Clipboard
 set clipboard=unnamed
+
+"快速生成tag文件
+map <F3> :! ctags -R<CR>
+map! <F3> <Esc>:! ctags -R<CR>
+
+"双击时高亮
+map <2-LeftMouse> *
+map! <2-LeftMouse> <c-o>*
+
+"Ctrl+鼠标左键跳转
+map <C-LeftMouse> <C-]>
+map! <C-LeftMouse> <Esc><C-]>
