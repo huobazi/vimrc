@@ -2,12 +2,6 @@
 let mapleader = ","
 let g:mapleader= ","
 
-" Esc
-imap JJ <esc>
-imap jj <esc>
-imap KK <esc>
-imap kk <esc>
-
 " 缩进
 nmap <tab> v>
 nmap <s-tab> v<
@@ -20,11 +14,6 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
-" 插入模式下的移动
-"inoremap <A-h> <Left>
-"inoremap <A-j> <Down>
-"inoremap <A-k> <Up>
-"inoremap <A-l> <Right>
 
 " 停用上下左右的箭头
 map <UP> <NOP>

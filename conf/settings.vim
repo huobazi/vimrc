@@ -196,7 +196,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.DS_Store  " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
 "Zencoding 设置
-let g:user_zen_expandabbr_key='<S-O>'
+"let g:user_zen_expandabbr_key='<c-e>'
 let g:use_zen_complete_tag = 1
 
 " Clipboard
