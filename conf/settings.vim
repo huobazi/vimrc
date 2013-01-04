@@ -77,6 +77,7 @@ autocmd FileType ruby,rdoc 	set tabstop=2 shiftwidth=2
 autocmd FileType html 		set tabstop=2 shiftwidth=2
 autocmd FileType javascript set tabstop=2 shiftwidth=2
 autocmd FileType coffee 	set tabstop=2 shiftwidth=2
+autocmd FileType css        set tabstop=2 shiftwidth=2
 
 " Ruby自动完成设置
 set ofu=syntaxcomplete#Complete
@@ -91,6 +92,7 @@ au! BufRead,BufNewFile *.mobile.erb set filetype=eruby.html.javascript.javascrip
 au! BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 au! BufRead,BufNewFile *.js set ft=javascript syntax=jquery
 au! BufRead,BufNewFile *.html set ft=html.javascript.javascript-jquery
+au! BufRead,BufNewFile *.scss set ft=css 
 au! FileType html,javascript let g:javascript_enable_domhtmlcss = 1
 
 " Powerline
