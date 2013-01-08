@@ -23,16 +23,16 @@ Bundle 'Align'
 Bundle 'Townk/vim-autoclose'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'closetag.vim'
 Bundle 'vim-scripts/HTML-AutoCloseTag'
 Bundle 'ZenCoding.vim'
+Bundle 'surround.vim'
 
 " Snipmate
 Bundle 'honza/snipmate-snippets'
 
 " Ruby
 Bundle 'vim-ruby/vim-ruby'
-"Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rails'
 
 " CoffeeScript
 Bundle 'kchmck/vim-coffee-script'
