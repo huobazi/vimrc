@@ -47,7 +47,7 @@ Bundle 'vim-scripts/fcitx.vim'
 Bundle 'Lokaltog/vim-powerline'
 
 " ColorScheme
-Bundle 'molokai'
+Bundle 'tomasr/molokai'
 
 
 filetype plugin indent on     " required!
