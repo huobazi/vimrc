@@ -52,3 +52,15 @@ cmap w!! w !sudo tee % >/dev/null
 
  "Tagbar 快捷键
 nmap <F8> :TagbarToggle<CR>
+
+"快速生成tag文件
+map <F3> :! ctags -R<CR>
+map! <F3> <Esc>:! ctags -R<CR>
+
+"双击时高亮
+map <2-LeftMouse> *
+map! <2-LeftMouse> <c-o>*
+
+"Ctrl+鼠标左键跳转
+map <C-LeftMouse> <C-]>
+map! <C-LeftMouse> <Esc><C-]>

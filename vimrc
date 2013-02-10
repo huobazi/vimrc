@@ -1,4 +1,6 @@
-runtime! conf/*.vim
+runtime! conf/bundles.vim
+runtime! conf/settings.vim
+runtime! conf/mappings.vim
 
 if has("gui_running")
     set guioptions-=T " 不显示工具条

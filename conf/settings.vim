@@ -1,5 +1,4 @@
 syntax on                   " 自动语法高亮
-colorscheme desert          " 设定配色方案
 filetype plugin indent on   " 根据文件格式载入插件和缩进
 
 " 字典
@@ -98,103 +97,28 @@ au! FileType html,javascript let g:javascript_enable_domhtmlcss = 1
 " Powerline
 let g:Powerline_symbols = 'unicode'
 
-" NeoComplCache =============================================================
-"
-" Disable AutoComplPop. Comment out this line if AutoComplPop is not installed.
-"let g:acp_enableAtStartup = 0
-" Launches neocomplcache automatically on vim startup.
-let g:neocomplcache_enable_at_startup = 1
-" Use smartcase.
-let g:neocomplcache_enable_smart_case = 1
-" Use camel case completion.
-let g:neocomplcache_enable_camel_case_completion = 1
-" Use underscore completion.
-let g:neocomplcache_enable_underbar_completion = 1
-" Sets minimum char length of syntax keyword.
-let g:neocomplcache_min_syntax_length = 3
-" buffer file name pattern that locks neocomplcache. e.g. ku.vim or fuzzyfinder 
-let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
-
-" Define file-type dependent dictionaries.
-let g:neocomplcache_dictionary_filetype_lists = {
-    \ 'default' : '',
-    \ 'vimshell' : $HOME.'/.vimshell_hist',
-    \ 'scheme' : $HOME.'/.gosh_completions'
-    \ }
-
-" Define keyword, for minor languages
-if !exists('g:neocomplcache_keyword_patterns')
-  let g:neocomplcache_keyword_patterns = {}
-endif
-let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
-
-" Plugin key-mappings.
-imap <C-k>     <Plug>(neocomplcache_snippets_expand)
-smap <C-k>     <Plug>(neocomplcache_snippets_expand)
-inoremap <expr><C-g>     neocomplcache#undo_completion()
-inoremap <expr><C-l>     neocomplcache#complete_common_string()
-
-" SuperTab like snippets behavior.
-"imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>"
-
-" Recommended key-mappings.
-" <CR>: close popup and save indent.
-inoremap <expr><CR>  neocomplcache#smart_close_popup() . "\<CR>"
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><C-y>  neocomplcache#close_popup()
-inoremap <expr><C-e>  neocomplcache#cancel_popup()
-
-" AutoComplPop like behavior.
-"let g:neocomplcache_enable_auto_select = 1
-
-" Shell like behavior(not recommended).
-"set completeopt+=longest
-"let g:neocomplcache_enable_auto_select = 1
-"let g:neocomplcache_disable_auto_complete = 1
-"inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<TAB>"
-"inoremap <expr><CR>  neocomplcache#smart_close_popup() . "\<CR>"
-
-" Enable omni completion. Not required if they are already set elsewhere in .vimrc
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,eruby,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-
-" Enable heavy omni completion, which require computational power and may stall the vim. 
-if !exists('g:neocomplcache_omni_patterns')
-  let g:neocomplcache_omni_patterns = {}
-endif
-let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
-"autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
-let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
-let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 
 
-" NeoSnippet ===========================================================
-"
-" Tell Neosnippet about the other snippets
-let g:neosnippet#snippets_directory='~/.vim/bundle/snipmate-snippets/snippets'
+" Enable omnicomplete {{{
+au FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+au FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+au FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+au FileType python setlocal omnifunc=pythoncomplete#Complete
+au FileType javascript,coffee setlocal omnifunc=javascriptcomplete#CompleteJS
+au FileType html setlocal omnifunc=htmlcomplete#CompleteTags
+au FileType css setlocal omnifunc=csscomplete#CompleteCSS
+au FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+au FileType php setlocal omnifunc=phpcomplete#CompletePHP
+au FileType c setlocal omnifunc=ccomplete#Complete
+au FileType cpp setlocal omnifunc=omni#cpp#complete#Main
+au FileType ruby,eruby setlocal omnifunc=rubycomplete#Complete
+" }}}
 
-" SuperTab like snippets behavior.
-imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>"
-" SuperTab like snippets behavior.
-imap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-
-" For snippet_complete marker.
-if has('conceal')
-    set conceallevel=2 concealcursor=i
-endif
-
-" ctrlp
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.DS_Store  " MacOSX/Linux
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+" Console {{{
+set t_Co=256
+colorscheme desert          " 设定配色方案
+set ttyfast
+" }}}
 
 "Zencoding 设置
 "let g:user_zen_expandabbr_key='<c-e>'
@@ -203,14 +127,84 @@ let g:use_zen_complete_tag = 1
 " Clipboard
 set clipboard=unnamed
 
-"快速生成tag文件
-map <F3> :! ctags -R<CR>
-map! <F3> <Esc>:! ctags -R<CR>
+" Ultisnips {{{
+let g:UltiSnipsExpandTrigger = "<c-l>"
+let g:UltiSnipsJumpForwardTrigger = "<c-l>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-h>"
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "snipmate-snippets"]
+" }}}
 
-"双击时高亮
-map <2-LeftMouse> *
-map! <2-LeftMouse> <c-o>*
+" CtrlP {{{
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.DS_Store  " MacOSX/Linux
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+let g:ctrlp_jump_to_buffer = 2
+let g:ctrlp_working_path_mode = 2
+let g:ctrlp_use_caching = 1
+let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_open_new_file = 1
+let g:ctrlp_cache_dir = expand($VIMHOME."/tmp/ctrlp_cache")
+let g:ctrlp_open_multi = '1t'
+" }}}
 
-"Ctrl+鼠标左键跳转
-map <C-LeftMouse> <C-]>
-map! <C-LeftMouse> <Esc><C-]>
+" delimitMate {{{
+let g:delimitMate_expand_cr = 1
+let g:delimitMate_expand_space = 1
+let g:delimitMate_balance_matchpairs = 1
+let g:delimitMate_excluded_ft = "mail,help"
+au FileType * let b:delimitMate_autoclose = 1
+" }}}
+
+
+" Nerdtree {{{
+"" Auto open nerd tree on startup
+let g:nerdtree_tabs_open_on_gui_startup = 0
+" Focus in the main content window
+let g:nerdtree_tabs_focus_on_files = 1
+" Make nerdtree look nice
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeDirArrows = 1
+let g:NERDTreeWinSize = 30
+let g:NERDTreeMouseMode = 3
+let g:NERDTreeCaseSensitiveSort = 1
+let g:NERDTreeChDirMode = 2
+" }}}
+
+" CoffeeScript {{{
+au FileType coffee setlocal foldmethod=indent nofoldenable
+au FileType coffee map <leader>r :CoffeeRun<cr>
+au FileType coffee map <leader>c :CoffeeCompile watch vertical<cr>
+au FileType coffee imap <leader>r <c-o>:CoffeeRun<cr>
+au FileType coffee imap <leader>c <c-o>:CoffeeCompile watch vertical<cr>
+" }}}
+
+" Javascript {{{
+if executable('node')
+    " Run current file in node for quick evaluation
+    func! s:RunInNode()
+        w
+        !node %
+    endf
+    au FileType javascript command! RunInNode call s:RunInNode()
+    au FileType javascript map <leader>r :RunInNode<cr>
+endif
+" }}}
+
+" Markdown {{{
+autocmd BufNewFile,BufRead *.{md,mkd,mkdn,mark*} set filetype=markdown
+" }}}
+
+" Python {{{
+let g:virtualenv_directory = expand($HOME."/ve")
+let g:python_highlight_all = 1
+let g:python_show_sync = 1
+let g:python_print_as_function = 1
+let g:pythonmode_enable_django = 1
+let g:pythonmode_enable_rope = 0
+let g:ropevim_vim_completion = 1
+let g:ropevim_extended_complete = 1
+au FileType python setlocal foldmethod=syntax
+" }}}
+
+" VimL {{{
+au FileType vim nnoremap <leader>r :w<cr> <bar> :so %<cr>
+" }}}

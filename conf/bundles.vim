@@ -17,18 +17,21 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 
 " Coding 
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/neosnippet'
 Bundle 'Align'
-Bundle 'Townk/vim-autoclose'
-Bundle 'majutsushi/tagbar'
+Bundle 'Valloric/YouCompleteMe'
+
+" Nasty bugs happen if I have the vim-autoclose plugin installed
+" Use the delimitMate plugin instead. It does the same thing without conflicting with YCM.
+Bundle 'Raimondi/delimitMate'
+
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/HTML-AutoCloseTag'
 Bundle 'ZenCoding.vim'
 Bundle 'surround.vim'
 
 " Snipmate
-Bundle 'honza/snipmate-snippets'
+Bundle 'SirVer/ultisnips'
+Bundle "honza/snipmate-snippets"
 
 " Ruby
 Bundle 'vim-ruby/vim-ruby'
