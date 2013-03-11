@@ -8,6 +8,7 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
+Bundle 'scrooloose/syntastic'
 Bundle 'JavaScript-syntax'
 Bundle 'jQuery'
 Bundle 'othree/html5.vim'
