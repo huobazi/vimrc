@@ -25,7 +25,7 @@ scriptencoding utf-8
 
 " 带有如下符号的单词不要被换行分割
 set iskeyword+=_,$,@,%,#,-
-
+set et                         " tab 替换成空格        
 set wildmenu                   " 打开命令行补全菜单
 setlocal noswapfile            " 不要生成swap文件
 set showmatch                  " 在输入括号时光标会短暂地跳到与之相匹配的括号处，不影响输入
