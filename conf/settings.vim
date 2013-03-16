@@ -1,12 +1,15 @@
 syntax on                   " 自动语法高亮
-filetype plugin indent on   " 根据文件格式载入插件和缩进
+
+" 根据文件格式载入插件和缩进
+filetype plugin on
+filetype indent on
 
 " 字典
 "set dictionary+=~/.vim/dict/my_words
 "set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words
 
 " 字体
-set guifont=monaco\ 9
+set guifont=monaco\ 12 
 
 set mouse=a          " 打开鼠标功能
 set selection=exclusive
@@ -25,6 +28,7 @@ scriptencoding utf-8
 
 " 带有如下符号的单词不要被换行分割
 set iskeyword+=_,$,@,%,#,-
+
 set et                         " tab 替换成空格        
 set wildmenu                   " 打开命令行补全菜单
 setlocal noswapfile            " 不要生成swap文件
@@ -32,8 +36,8 @@ set showmatch                  " 在输入括号时光标会短暂地跳到与�
 set matchtime=5                " 匹配括号高亮的时间（单位是十分之一秒）
 set formatoptions+=mM          " 正确地处理中文字符的折行和拼接
 set autoindent
-set undolevels=100
-set history=100                " history文件中需要记录的行数
+set undolevels=1000
+set history=1000                " history文件中需要记录的行数
 set nocompatible               " 关闭 vi 兼容模式
 set number                     " 显示行号
 set cursorline                 " 突出显示当前行
@@ -53,17 +57,19 @@ set incsearch                  " 输入搜索内容时就显示搜索结果
 set hlsearch                   " 搜索时高亮显示被找到的文本
 set noerrorbells               " 关闭错误信息响铃
 set novisualbell               " 关闭使用可视响铃代替呼叫
-set t_vb=                      " 置空错误铃声的终端代码
+set vb t_vb=                   " 置空错误铃声的终端代码
 set showmatch                  " 插入括号时，短暂地跳转到匹配的对应括号
 set matchtime=2                " 短暂跳转到匹配括号的时间
 set magic                      " 设置魔术
 set hidden                     " 允许在有未保存的修改时切换缓冲区，此时的修改由 vim 负责保存
 set guioptions-=T              " 隐藏工具栏
 set guioptions-=m              " 隐藏菜单栏
+set guioptions-=r              " Removes right hand scroll bar
+set go-=L                      " Removes left hand scroll bar
 set smartindent                " 开启新行时使用智能自动缩进
 set backspace=indent,eol,start " 不设定在插入状态无法用退格键和 Delete 键删除回车符
 set cmdheight=1                " 设定命令行的行数为 1
-set foldenable                 " 开始折叠
+set foldenable                 " 开启折叠
 set foldmethod=syntax          " 设置语法折叠
 set foldcolumn=0               " 设置折叠区域的宽度
 setlocal foldlevel=1           " 设置折叠层数为
@@ -77,6 +83,7 @@ autocmd FileType html 		set tabstop=2 shiftwidth=2
 autocmd FileType javascript set tabstop=2 shiftwidth=2
 autocmd FileType coffee 	set tabstop=2 shiftwidth=2
 autocmd FileType css        set tabstop=2 shiftwidth=2
+
 
 " Ruby自动完成设置
 set ofu=syntaxcomplete#Complete
@@ -93,11 +100,10 @@ au! BufRead,BufNewFile *.js set ft=javascript syntax=jquery
 au! BufRead,BufNewFile *.html set ft=html.javascript.javascript-jquery
 au! BufRead,BufNewFile *.scss set ft=css 
 au! FileType html,javascript let g:javascript_enable_domhtmlcss = 1
+au! BufRead,BufNewFile *.json setfiletype json
 
 " Powerline
 let g:Powerline_symbols = 'unicode'
-
-
 
 " Enable omnicomplete {{{
 au FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
@@ -116,7 +122,7 @@ au FileType ruby,eruby setlocal omnifunc=rubycomplete#Complete
 
 " Console {{{
 set t_Co=256
-colorscheme desert          " 设定配色方案
+colorscheme desert          " 设定默认配色方案
 set ttyfast
 " }}}
 
@@ -163,7 +169,7 @@ let g:nerdtree_tabs_focus_on_files = 1
 " Make nerdtree look nice
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeDirArrows = 1
-let g:NERDTreeWinSize = 30
+let g:NERDTreeWinSize = 36
 let g:NERDTreeMouseMode = 3
 let g:NERDTreeCaseSensitiveSort = 1
 let g:NERDTreeChDirMode = 2
@@ -207,4 +213,14 @@ au FileType python setlocal foldmethod=syntax
 
 " VimL {{{
 au FileType vim nnoremap <leader>r :w<cr> <bar> :so %<cr>
+" }}}
+"
+" Syntastic {{{
+let g:syntastic_check_on_open = 1
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '⚠'
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_loc_list_height = 5
+let g:syntastic_enable_highlighting = 0
+let g:syntastic_mode_map = { 'passive_filetypes': ['scss', 'slim'] }
 " }}}
