@@ -51,7 +51,7 @@ noremap <Leader>w :w!<CR>:echo "Saving:" expand('%:p')<CR>
 cmap w!! w !sudo tee % >/dev/null
 
  "Tagbar 快捷键
-nmap <F8> :TagbarToggle<CR>
+"nmap <F8> :TagbarToggle<CR>
 
 "快速生成tag文件
 map <F3> :! ctags -R --exclude=.git --exclude=log * <CR>
