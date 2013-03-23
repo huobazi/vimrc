@@ -36,8 +36,8 @@ set showmatch                  " 在输入括号时光标会短暂地跳到与�
 set matchtime=5                " 匹配括号高亮的时间（单位是十分之一秒）
 set formatoptions+=mM          " 正确地处理中文字符的折行和拼接
 set autoindent
-set undolevels=1000
-set history=1000                " history文件中需要记录的行数
+set undolevels=10000
+set history=10000                " history文件中需要记录的行数
 set nocompatible               " 关闭 vi 兼容模式
 set number                     " 显示行号
 set cursorline                 " 突出显示当前行
@@ -132,13 +132,6 @@ let g:use_zen_complete_tag = 1
 
 " Clipboard
 set clipboard=unnamed
-
-" Ultisnips {{{
-let g:UltiSnipsExpandTrigger = "<c-l>"
-let g:UltiSnipsJumpForwardTrigger = "<c-l>"
-let g:UltiSnipsJumpBackwardTrigger = "<c-h>"
-let g:UltiSnipsSnippetDirectories=["UltiSnips", "snipmate-snippets"]
-" }}}
 
 " CtrlP {{{
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.DS_Store  " MacOSX/Linux

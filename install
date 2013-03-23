@@ -17,8 +17,5 @@ ln -s $current_path/vimrc $HOME/.vimrc
 
 vim +BundleInstall +qall
 
-# Compiling YCM with semantic support for C-family languages
-cd $HOME/.vim/bundle/YouCompleteMe
-./install.sh --clang-completer
 
 echo "Deploy done."
