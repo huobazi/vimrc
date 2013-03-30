@@ -9,7 +9,7 @@ filetype indent on
 "set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words
 
 " 字体
-set guifont=monaco\ 12 
+set guifont=monaco\ 13 
 
 set mouse=a          " 打开鼠标功能
 set selection=exclusive

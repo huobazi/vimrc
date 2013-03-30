@@ -16,6 +16,7 @@ Bundle 'othree/html5.vim'
 " Files explorers 
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
+Bundle 'rking/ag.vim'
 
 " Coding 
 Bundle 'Align'
@@ -49,6 +50,5 @@ Bundle 'Lokaltog/vim-powerline'
 
 " ColorScheme
 Bundle 'tomasr/molokai'
-
 
 filetype plugin indent on     " required!
