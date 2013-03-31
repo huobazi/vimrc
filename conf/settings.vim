@@ -20,7 +20,7 @@ set shiftwidth=4
 set expandtab
 set smarttab
 
-" 编码   
+" 编码
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1,euc-jp,utf-16le,ucs,latin1,euc-kr
 set fenc=utf-8 enc=utf-8 tenc=utf-8
@@ -29,6 +29,9 @@ scriptencoding utf-8
 " 带有如下符号的单词不要被换行分割
 set iskeyword+=_,$,@,%,#,-
 
+" Now if you have spaces at end of lines, you get notified
+set list
+set listchars=trail:+
 set et                         " tab 替换成空格        
 set wildmenu                   " 打开命令行补全菜单
 setlocal noswapfile            " 不要生成swap文件

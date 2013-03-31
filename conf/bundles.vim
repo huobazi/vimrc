@@ -24,8 +24,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/HTML-AutoCloseTag'
 Bundle 'ZenCoding.vim'
-Bundle 'surround.vim'
-"Bundle 'yueyoum/vim-linemovement'
+Bundle 'tpope/vim-surround'
 
 " Snipmate
 Bundle 'Shougo/neocomplcache.git'
