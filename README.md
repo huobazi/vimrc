@@ -1,6 +1,6 @@
 # My vim settings
 
-It's my vim settings on Linux
+It's my vim settings on Linux/OSX
 
 ## Dependence
 
