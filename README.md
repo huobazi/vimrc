@@ -6,7 +6,7 @@ It's my vim settings on Linux
 
 * vim
 * git
-[the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
+* [the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
 
 ***
 
