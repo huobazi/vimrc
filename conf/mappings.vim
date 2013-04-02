@@ -1,7 +1,8 @@
-" Leader
+" Map leader and localleader key to comma
 let mapleader = ","
-let g:mapleader= ","
-
+let g:mapleader = ","
+let maplocalleader = ","
+let g:maplocalleader = ","
 " 缩进
 nmap <tab> v>
 nmap <s-tab> v<

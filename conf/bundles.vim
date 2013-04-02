@@ -25,6 +25,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/HTML-AutoCloseTag'
 Bundle 'ZenCoding.vim'
 Bundle 'tpope/vim-surround'
+Bundle 'terryma/vim-expand-region'
 
 " Snipmate
 Bundle 'Shougo/neocomplcache.git'

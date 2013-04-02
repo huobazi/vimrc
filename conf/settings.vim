@@ -32,7 +32,7 @@ set iskeyword+=_,$,@,%,#,-
 " Now if you have spaces at end of lines, you get notified
 set list
 set listchars=trail:+
-set et                         " tab 替换成空格        
+set et                         " tab 替换成空格
 set wildmenu                   " 打开命令行补全菜单
 setlocal noswapfile            " 不要生成swap文件
 set showmatch                  " 在输入括号时光标会短暂地跳到与之相匹配的括号处，不影响输入
@@ -94,7 +94,7 @@ let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
 let g:rubycomplete_rails = 1
 
-au! BufRead,BufNewFile *.json setfiletype json 
+au! BufRead,BufNewFile *.json setfiletype json
 au! BufRead,BufNewFile *.hamlc set ft=haml
 au! BufNewFile,BufRead *.mobile.erb let b:eruby_subtype='html'
 au! BufRead,BufNewFile *.mobile.erb set filetype=eruby.html.javascript.javascript-jquery
@@ -133,8 +133,13 @@ set ttyfast
 "let g:user_zen_expandabbr_key='<c-e>'
 let g:use_zen_complete_tag = 1
 
-" Clipboard
-set clipboard=unnamed
+" Writes to the unnamed register also writes to the * and + registers. This
+" makes it easy to interact with the system clipboard
+if has ('unnamedplus')
+  set clipboard=unnamedplus
+else
+  set clipboard=unnamed
+endif
 
 " CtrlP {{{
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.DS_Store  " MacOSX/Linux
