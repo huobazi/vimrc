@@ -11,7 +11,7 @@ endif
 
 " 配色
 try
-    colorscheme molokai 
+    colorscheme molokai
     let g:molokai_original = 1
 catch  
 endtry

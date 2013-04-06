@@ -9,7 +9,7 @@ filetype indent on
 "set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words
 
 " 字体
-set guifont=monaco\ 13 
+set guifont=monaco\ 13
 
 set mouse=a          " 打开鼠标功能
 set selection=exclusive
@@ -29,9 +29,11 @@ scriptencoding utf-8
 " 带有如下符号的单词不要被换行分割
 set iskeyword+=_,$,@,%,#,-
 
-" Now if you have spaces at end of lines, you get notified
-set list
-set listchars=trail:+
+set list!                       " Display unprintable characters
+set listchars=tab:▸\ ,trail:•,extends:»,precedes:«
+set updatecount=100             " Write swap file to disk every 100 chars
+set complete=.,w,b,u,U,t,i,d    " Do lots of scanning on tab completion
+
 set et                         " tab 替换成空格
 set wildmenu                   " 打开命令行补全菜单
 setlocal noswapfile            " 不要生成swap文件
