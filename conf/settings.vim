@@ -1,5 +1,11 @@
 syntax on                   " 自动语法高亮
 
+let g:auto_save = 1         " Auto save
+
+" When vimrc is edited, reload it
+" copied from http://amix.dk/vim/vimrc.html
+autocmd! bufwritepost vimrc source ~/.vim/vimrc
+
 " 根据文件格式载入插件和缩进
 filetype plugin on
 filetype indent on
@@ -127,7 +133,7 @@ au FileType ruby,eruby setlocal omnifunc=rubycomplete#Complete
 
 " Console {{{
 set t_Co=256
-colorscheme desert          " 设定默认配色方案
+    colorscheme desert          " 设定默认配色方案
 set ttyfast
 " }}}
 
@@ -145,7 +151,11 @@ endif
 
 " CtrlP {{{
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.DS_Store  " MacOSX/Linux
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+let g:ctrlp_open_multiple_files = 'v'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git)$',
+  \ 'file': '\v\.(log|jpg|png|jpeg)$',
+  \ }
 let g:ctrlp_jump_to_buffer = 2
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_use_caching = 1

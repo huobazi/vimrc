@@ -30,7 +30,8 @@ Bundle 'terryma/vim-expand-region'
 " Snipmate
 Bundle 'Shougo/neocomplcache.git'
 Bundle 'Shougo/neosnippet.git'
-Bundle 'honza/snipmate-snippets'
+Bundle 'honza/vim-snippets'
+
 
 " Ruby
 Bundle 'vim-ruby/vim-ruby'
