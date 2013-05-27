@@ -237,3 +237,14 @@ let g:syntastic_loc_list_height = 5
 let g:syntastic_enable_highlighting = 0
 let g:syntastic_mode_map = { 'passive_filetypes': ['scss', 'slim'] }
 " }}}
+"
+"
+" JSON {{{
+au! BufRead,BufNewFile *.json set filetype=json
+autocmd FileType json set autoindent
+autocmd FileType json set formatoptions=tcq2l
+autocmd FileType json set textwidth=78 shiftwidth=2
+autocmd FileType json set softtabstop=2 tabstop=8
+autocmd FileType json set expandtab
+autocmd FileType json set foldmethod=syntax
+" }}}

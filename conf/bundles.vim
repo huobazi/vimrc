@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 Bundle 'scrooloose/syntastic'
@@ -13,12 +13,12 @@ Bundle 'JavaScript-syntax'
 Bundle 'jQuery'
 Bundle 'othree/html5.vim'
 
-" Files explorers 
+" Files explorers
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'rking/ag.vim'
 
-" Coding 
+" Coding
 Bundle 'Align'
 Bundle 'Raimondi/delimitMate'
 Bundle 'scrooloose/nerdcommenter'
@@ -32,6 +32,8 @@ Bundle 'Shougo/neocomplcache.git'
 Bundle 'Shougo/neosnippet.git'
 Bundle 'honza/vim-snippets'
 
+" JSON
+Bundle 'elzr/vim-json'
 
 " Ruby
 Bundle 'vim-ruby/vim-ruby'
