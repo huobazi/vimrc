@@ -48,8 +48,8 @@ Bundle 'hallison/vim-markdown'
 " Fcitx
 Bundle 'vim-scripts/fcitx.vim'
 
-" Powerline
-Bundle 'Lokaltog/vim-powerline'
+" VimAirline
+Bundle 'bling/vim-airline'
 
 " ColorScheme
 Bundle 'tomasr/molokai'

@@ -26,6 +26,9 @@ set shiftwidth=4
 set expandtab
 set smarttab
 
+set ttimeoutlen=50
+set lz
+
 " 编码
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1,euc-jp,utf-16le,ucs,latin1,euc-kr
