@@ -20,6 +20,7 @@ Bundle 'rking/ag.vim'
 
 " Coding
 Bundle 'Align'
+Bundle 'junegunn/vim-easy-align'
 Bundle 'Raimondi/delimitMate'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/HTML-AutoCloseTag'
