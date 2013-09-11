@@ -140,9 +140,6 @@ set t_Co=256
 set ttyfast
 " }}}
 
-"Zencoding 设置
-"let g:user_zen_expandabbr_key='<c-e>'
-let g:use_zen_complete_tag = 1
 
 " Writes to the unnamed register also writes to the * and + registers. This
 " makes it easy to interact with the system clipboard
@@ -251,3 +248,6 @@ autocmd FileType json set softtabstop=2 tabstop=8
 autocmd FileType json set expandtab
 autocmd FileType json set foldmethod=syntax
 " }}}
+
+
+vnoremap <silent> <Enter> :EasyAlign<cr>

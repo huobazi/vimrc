@@ -38,13 +38,11 @@ map <leader>p "+p
 imap <silent> <F6> <esc>:NERDTreeToggle<CR>
 nmap <silent> <F6> :NERDTreeToggle<CR>
 
-" 清除搜索结果 
+" 清除搜索结果
 noremap <silent><Leader>/ :nohls<CR>
 
 " 空格/回车折叠代码
-nnoremap <Enter> za
 nnoremap <Space> za
-vnoremap <Enter> za
 vnoremap <Space> za
 
 " 拷贝到行尾
@@ -59,8 +57,6 @@ noremap <Leader>w :w!<CR>:echo "Saving:" expand('%:p')<CR>
 " sudo 快速保存
 cmap w!! w !sudo tee % >/dev/null
 
- "Tagbar 快捷键
-"nmap <F8> :TagbarToggle<CR>
 
 "快速生成tag文件
 map <F3> :! ctags -R --exclude=.git --exclude=log * <CR>

@@ -19,14 +19,13 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'rking/ag.vim'
 
 " Coding
-Bundle 'Align'
 Bundle 'junegunn/vim-easy-align'
 Bundle 'Raimondi/delimitMate'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/HTML-AutoCloseTag'
-Bundle 'ZenCoding.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'terryma/vim-expand-region'
+Bundle 'mattn/emmet-vim'
 
 " Snipmate
 Bundle 'Shougo/neocomplcache.git'
@@ -45,6 +44,9 @@ Bundle 'kchmck/vim-coffee-script'
 
 " Markdown
 Bundle 'hallison/vim-markdown'
+
+" Slim
+Bundle 'slim-template/vim-slim'
 
 " Fcitx
 Bundle 'vim-scripts/fcitx.vim'
