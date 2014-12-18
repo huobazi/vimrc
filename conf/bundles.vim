@@ -1,60 +1,66 @@
-set nocompatible               " be iMproved
-filetype off                   " required!
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
-Bundle 'scrooloose/syntastic'
-Bundle 'JavaScript-syntax'
-Bundle 'jQuery'
-Bundle 'othree/html5.vim'
+" My vundle list
+
+Plugin 'scrooloose/syntastic'
+Plugin 'JavaScript-syntax'
+Plugin 'jQuery'
+Plugin 'othree/html5.vim'
 
 " Files explorers
-Bundle 'scrooloose/nerdtree'
-Bundle 'kien/ctrlp.vim'
-Bundle 'rking/ag.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'rking/ag.vim'
 
 " Coding
-Bundle 'junegunn/vim-easy-align'
-Bundle 'Raimondi/delimitMate'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'vim-scripts/HTML-AutoCloseTag'
-Bundle 'tpope/vim-surround'
-Bundle 'terryma/vim-expand-region'
-Bundle 'mattn/emmet-vim'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'Raimondi/delimitMate'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'vim-scripts/HTML-AutoCloseTag'
+Plugin 'tpope/vim-surround'
+Plugin 'terryma/vim-expand-region'
+Plugin 'mattn/emmet-vim'
 
 " Snipmate
-Bundle 'Shougo/neocomplcache.git'
-Bundle 'Shougo/neosnippet.git'
-Bundle 'honza/vim-snippets'
+Plugin 'Shougo/neocomplcache.git'
+Plugin 'Shougo/neosnippet.git'
+Plugin 'honza/vim-snippets'
 
 " JSON
-Bundle 'elzr/vim-json'
+Plugin 'elzr/vim-json'
 
 " Ruby
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-rails'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
 
 " CoffeeScript
-Bundle 'kchmck/vim-coffee-script'
+Plugin 'kchmck/vim-coffee-script'
 
 " Markdown
-Bundle 'hallison/vim-markdown'
+Plugin 'hallison/vim-markdown'
 
 " Slim
-Bundle 'slim-template/vim-slim'
+Plugin 'slim-template/vim-slim'
 
 " Fcitx
-Bundle 'vim-scripts/fcitx.vim'
+Plugin 'vim-scripts/fcitx.vim'
 
 " VimAirline
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 
 " ColorScheme
-Bundle 'tomasr/molokai'
+Plugin 'tomasr/molokai'
 
-filetype plugin indent on     " required!
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
