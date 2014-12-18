@@ -15,7 +15,6 @@ ln -s $current_path $HOME/.vim
 ln -s $current_path/vimrc $HOME/.vimrc
 
 
-vim +BundleInstall +qall
-
+vim +PluginInstall +qall
 
 echo "Deploy done."
