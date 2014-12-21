@@ -33,7 +33,6 @@ set lz
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1,euc-jp,utf-16le,ucs,latin1,euc-kr
 set fileencoding=utf-8
-set termencodings=utf-8
 scriptencoding utf-8
 
 " 带有如下符号的单词不要被换行分割

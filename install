@@ -9,7 +9,8 @@ rm -rf $HOME/.gvimrc
 current_path="${PWD}"
 
 rm -rf $current_path/bundle
-git clone https://github.com/gmarik/vundle.git $current_path/bundle/vundle 
+git clone https://github.com/gmarik/Vundle.vim.git $current_path/bundle/Vundle.vim
+
 
 ln -s $current_path $HOME/.vim
 ln -s $current_path/vimrc $HOME/.vimrc
