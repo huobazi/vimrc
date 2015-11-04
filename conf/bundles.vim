@@ -32,7 +32,7 @@ Plugin 'terryma/vim-expand-region'
 Plugin 'mattn/emmet-vim'
 
 " Snipmate
-Plugin 'Shougo/neocomplcache.git'
+"Plugin 'Shougo/neocomplcache.git'
 Plugin 'Shougo/neosnippet.git'
 Plugin 'honza/vim-snippets'
 

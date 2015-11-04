@@ -1,7 +1,7 @@
 runtime! conf/bundles.vim
 runtime! conf/settings.vim
 runtime! conf/mappings.vim
-runtime! conf/neocomplcache.vim
+"runtime! conf/neocomplcache.vim
 
 if has("gui_running")
     "
