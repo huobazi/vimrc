@@ -12,7 +12,6 @@ Plugin 'gmarik/Vundle.vim'
 
 " My vundle list
 
-Plugin 'scrooloose/syntastic'
 Plugin 'JavaScript-syntax'
 Plugin 'jQuery'
 Plugin 'othree/html5.vim'
@@ -27,25 +26,22 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-scripts/HTML-AutoCloseTag'
-Plugin 'tpope/vim-surround'
-Plugin 'terryma/vim-expand-region'
 Plugin 'mattn/emmet-vim'
 
 " Snipmate
-"Plugin 'Shougo/neocomplcache.git'
-Plugin 'Shougo/neosnippet.git'
-Plugin 'honza/vim-snippets'
+Plugin 'Shougo/neocomplete'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
 
 " JSON
 Plugin 'elzr/vim-json'
 
 
-" Go lang
+" Golang
 Plugin 'fatih/vim-go'
 
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails'
 
 " CoffeeScript
 Plugin 'kchmck/vim-coffee-script'

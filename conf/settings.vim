@@ -231,15 +231,6 @@ au FileType python setlocal foldmethod=syntax
 au FileType vim nnoremap <leader>r :w<cr> <bar> :so %<cr>
 " }}}
 "
-" Syntastic {{{
-let g:syntastic_check_on_open = 1
-let g:syntastic_error_symbol = '✗'
-let g:syntastic_warning_symbol = '⚠'
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_loc_list_height = 5
-let g:syntastic_enable_highlighting = 0
-let g:syntastic_mode_map = { 'passive_filetypes': ['scss', 'slim'] }
-" }}}
 "
 "
 " JSON {{{
@@ -254,3 +245,18 @@ autocmd FileType json set foldmethod=syntax
 
 
 vnoremap <silent> <Enter> :EasyAlign<cr>
+
+" NeoSnippet {{{
+"
+"
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+" For conceal markers.
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
+"
+"
+" }}}
