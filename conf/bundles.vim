@@ -39,6 +39,10 @@ Plugin 'honza/vim-snippets'
 " JSON
 Plugin 'elzr/vim-json'
 
+
+" Go lang
+Plugin 'fatih/vim-go'
+
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
