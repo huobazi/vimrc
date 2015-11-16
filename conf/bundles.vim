@@ -18,6 +18,7 @@ Plugin 'othree/html5.vim'
 
 " Files explorers
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'kien/ctrlp.vim'
 Plugin 'rking/ag.vim'
 
