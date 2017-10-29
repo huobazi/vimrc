@@ -58,10 +58,6 @@ noremap <Leader>w :w!<CR>:echo "Saving:" expand('%:p')<CR>
 cmap w!! w !sudo tee % >/dev/null
 
 
-"快速生成tag文件
-map <F3> :! ctags -R --exclude=.git --exclude=log * <CR>
-map! <F3> <Esc>:! ctags -R --exclude=.git --exclude=log * <CR>
-
 "双击时高亮
 map <2-LeftMouse> *
 map! <2-LeftMouse> <c-o>*
