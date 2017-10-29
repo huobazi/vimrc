@@ -46,6 +46,9 @@ Plugin 'tpope/vim-rails'
 " CoffeeScript
 Plugin 'kchmck/vim-coffee-script'
 
+" Solidity
+Plugin 'tomlion/vim-solidity'
+
 " Markdown
 Plugin 'hallison/vim-markdown'
 
