@@ -28,6 +28,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-scripts/HTML-AutoCloseTag'
 Plugin 'mattn/emmet-vim'
+Plugin 'zxqfl/tabnine-vim'
 
 " Snipmate
 Plugin 'Shougo/neocomplete'
@@ -37,6 +38,11 @@ Plugin 'Shougo/neosnippet-snippets'
 " JSON
 Plugin 'elzr/vim-json'
 
+" Dart
+Plugin 'dart-lang/dart-vim-plugin'
+
+" Flutter
+Plugin 'thosakwe/vim-flutter'
 
 " Golang
 Plugin 'fatih/vim-go'
