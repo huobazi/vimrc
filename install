@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 echo ""
-echo "Deploy vimrc settings......"
+echo "===> Deploy vimrc settings......"
 
 rm -rf $HOME/.vim
 rm -rf $HOME/.vimrc
@@ -18,4 +18,4 @@ ln -s $current_path/vimrc $HOME/.vimrc
 
 vim +PluginInstall +qall
 
-echo "Deploy vimrc done."
+echo "===> Deploy vimrc done."
