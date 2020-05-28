@@ -1,19 +1,23 @@
+colorscheme desert          " 设定默认配色方案
 runtime! conf/bundles.vim
 runtime! conf/settings.vim
 runtime! conf/mappings.vim
 
 if has("gui_running")
-    "
 else
     set t_Co=256
 endif
-
+set ttyfast
 " 配色
 try
     colorscheme molokai
     let g:molokai_original = 1
-catch  
+catch
 endtry
+
+" set highlight to 1000 ms
+let g:highlightedyank_highlight_duration = 1000
+highlight HighlightedyankRegion cterm=reverse gui=reverse
 
 " 80字符边界线
 if exists('+colorcolumn')

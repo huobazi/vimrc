@@ -137,13 +137,6 @@ au FileType cpp setlocal omnifunc=omni#cpp#complete#Main
 au FileType ruby,eruby setlocal omnifunc=rubycomplete#Complete
 " }}}
 
-" Console {{{
-set t_Co=256
-    colorscheme desert          " 设定默认配色方案
-set ttyfast
-" }}}
-
-
 " Writes to the unnamed register also writes to the * and + registers. This
 " makes it easy to interact with the system clipboard
 if has ('unnamedplus')
