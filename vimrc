@@ -1,14 +1,14 @@
-colorscheme desert          " 设定默认配色方案
-runtime! conf/bundles.vim
-runtime! conf/settings.vim
-runtime! conf/mappings.vim
-
 if has("gui_running")
 else
     set t_Co=256
 endif
+colorscheme desert          " 设定默认配色方案
+
+runtime! conf/bundles.vim
+runtime! conf/settings.vim
+runtime! conf/mappings.vim
+
 set ttyfast
-" 配色
 try
     colorscheme molokai
     let g:molokai_original = 1
