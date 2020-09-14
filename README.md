@@ -16,6 +16,6 @@ This step will overwrite your .vimrc .gvimrc file and .vim folder, be sure **bac
 
     git clone git://github.com/huobazi/vimrc.git
     cd vimrc 
-    chmod +x ./install && ./install
+    make install
 
 Done.
